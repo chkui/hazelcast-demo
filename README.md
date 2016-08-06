@@ -1,2 +1,2 @@
 # hazelcast-demo
-user hazelcast demo.
+hazelcast demo.
