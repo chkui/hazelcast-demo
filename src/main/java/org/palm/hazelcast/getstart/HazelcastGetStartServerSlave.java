@@ -6,6 +6,10 @@ import java.util.Queue;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 
+/**
+ * 创建hazelcast从服务
+ * @author chkui
+ */
 public class HazelcastGetStartServerSlave {
 	public static void main(String[] args) {
 		//创建一个 hazelcastInstance实例
