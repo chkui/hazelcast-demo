@@ -15,7 +15,6 @@ import com.hazelcast.core.HazelcastInstance;
  * @author chkui
  */
 public class HazelcastConfigSimple {
-
 	// 配置文件存放路径
 	final static String DEF_SIMPLE_CONFIG_FILE = "xmlconfig/simple-config.xml";
 
@@ -37,6 +36,7 @@ public class HazelcastConfigSimple {
 		// 输出默认map的备份副本个数
 		System.out.println("Default map backup count:" + mapConfigDefault.getBackupCount());
 
+		// 测试创建Hazelcast实例并读写测试数据
 		HazelcastInstance instance1 = Hazelcast.newHazelcastInstance(config);
 		HazelcastInstance instance2 = Hazelcast.newHazelcastInstance(config);
 
