@@ -15,12 +15,9 @@ import com.hazelcast.core.HazelcastInstance;
  * @author chkui
  */
 public class HazelcastConfigSimple {
-	// 配置文件存放路径
-	final static String DEF_SIMPLE_CONFIG_FILE = "xmlconfig/simple-config.xml";
-
 	public static void main(String[] args) {
-		// 加载配置文件
-		Config config = new ClasspathXmlConfig(DEF_SIMPLE_CONFIG_FILE);
+		// 从classpath加载配置文件
+		Config config = new ClasspathXmlConfig("xmlconfig/simple-config.xml");
 		// 获取网络配置
 		NetworkConfig netConfig = config.getNetworkConfig();
 		// 获取用户定义的map配置
