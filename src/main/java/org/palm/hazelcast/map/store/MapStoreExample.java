@@ -6,6 +6,10 @@ import java.util.Map;
 
 import com.hazelcast.core.MapStore;
 
+/**
+ * Map持久数据读写
+ * @author chkui
+ */
 public class MapStoreExample implements MapStore<Integer, String> {
 	
 	Map<Integer, String> store;
